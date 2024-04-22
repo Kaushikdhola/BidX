@@ -4,13 +4,12 @@ Welcome to BidX, your online marketplace for buying and selling second-hand item
 
 - _Date Created_: 03 Feb 2024
 - _Last Modification Date_: 12 April 2024
-- _Deployment:_ <https://main--chimerical-squirrel-737257.netlify.app/>
 
 ## Deployment
 
 To deploy our Angular frontend on Netlify, we configure it for production optimization and manage build commands and redirects directly on the platform, ensuring API URLs are appropriately set in the environment settings.
 
-1. Push "bidx-frontend" code to remote branch (preferably Github).
+1. Push "bidx-frontend" code to the remote branch (preferably Github).
 2. Update [apiUrl](bidx-frontend/src/environment.stage.ts) with the deployed backend URL.
 3. Update [environments.ts](bidx-frontend/src/environments/environment.ts) with your firebase configurations.
 4. Go to [Netlify](https://www.netlify.com/) and click on "Add new site".
@@ -20,7 +19,7 @@ To deploy our Angular frontend on Netlify, we configure it for production optimi
 
 For our Spring Boot backend on Render.com, we use Docker to maintain consistent operations, establish necessary environment secrets via the platform's dashboard, and activate automatic deployments upon new commits to streamline and ensure efficient deployment processes.
 
-1. Push "bidx-backend" code to remote branch (preferably Github).
+1. Push "bidx-backend" code to a remote branch (preferably Github).
 2. Update [WebConfig](bidx-backend/src/main/java/com/example/bidxbackend/config/WebConfig.java) with the deployed frontend URL.
 3. Update [FirebaseConfig](bidx-backend/src/main/java/com/example/bidxbackend/config/FirebaseConfig.java) with the sdk and other configurations.
 4. Update [spring.data.mongodb.uri](bidx-backend/src/main/resources/application.properties) with your mongodb database connection url.
@@ -47,3 +46,6 @@ For our Spring Boot backend on Render.com, we use Docker to maintain consistent 
 Here in our web app, we have used the Image Slider on the home page and the images used there are created using [Canva](https://www.canva.com/).
 
 We would like to acknowledge [Angular](https://angular.io/docs) documentation for the whole front-end code and [Material UI](https://material.angular.io/guide/getting-started) for providing the UI design for the header bar.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
